@@ -60,6 +60,7 @@ GEM
       activesupport (>= 4.1.0)
     gyoku (1.3.1)
       builder (>= 2.1.2)
+    httpclient (2.8.3)
     httpi (2.4.2)
       rack
       socksify
@@ -135,6 +136,8 @@ GEM
       nokogiri (>= 1.4.0)
       nori (~> 2.4)
       wasabi (~> 3.4)
+    soap4r (1.5.8)
+      httpclient (>= 2.1.1)
     socksify (1.7.0)
     spring (2.0.1)
       activesupport (>= 4.2)
@@ -183,7 +186,8 @@ DEPENDENCIES
   puma (~> 3.0)
   rails (~> 5.0.1)
   sass-rails (~> 5.0)
-  savon (~> 2.11.0)
+  savon (~> 2.0)
+  soap4r
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3
@@ -193,4 +197,4 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 BUNDLED WITH
-   1.13.7
+   1.14.4
